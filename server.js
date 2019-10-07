@@ -27,7 +27,6 @@ function handleError(res, reason, message, code) {
 }
 
 app.post("/sendmail/template", function(req, res){
-
     const {to, from, template_data} = req.body;
     const msg = {
         to: to,
@@ -38,8 +37,7 @@ app.post("/sendmail/template", function(req, res){
     sgMail.send(msg)
     .then((success)=>{
       res.status(200).send({success: "Email enviado com sucesso"});
-    }).catch(err=>res.status(400).send({error:"Algo de errado não está certo no envio de emails."}));
-    
+    }).catch(err=>res.status(400).send({error:"Algo de errado não está certo no envio de emails."})); 
 });
 
 app.post("/sendmail", function(req, res){

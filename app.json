@@ -1,0 +1,7 @@
+{
+  "name": "Heroku Mail Sender with Sendgrid",
+  "description": "App criado com o intuito de exemplificar o uso da plataforma Sendgrid dentro do heroku",
+  "repository": "https://github.com/leonardobenedeti/heroku-mail-sender",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "sendgrid"]
+}
